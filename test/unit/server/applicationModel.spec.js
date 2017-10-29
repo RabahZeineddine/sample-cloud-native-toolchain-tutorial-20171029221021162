@@ -40,19 +40,19 @@ describe('Application Model', function() {
     }]);
   });
 
-//  describe("application model", function() {
-//    describe("#getAllApplications()", function() {
-//      it("respond with all applications", function() {
-//        var apps = applicationModel.getAllApplications();
-//        expect(apps.length).to.equal(2);
-//      });
-//    });
-//
-//    describe("#getApplicationById", function() {
-//      it("respond with matching application", function() {
-//        var apps = applicationModel.getApplicationById(8888);
-//        expect(apps.id).to.equal(8888);
-//      });
-//    });
-//  });
+  describe("application model", function() {
+    describe("#getAllApplications()", function() {
+      it("respond with all applications", function() {
+        var apps = applicationModel.getAllApplications();
+        expect(apps.length).to.equal(2);
+      });
+    });
+
+    describe("#getApplicationById", function() {
+      it("respond with matching application", function() {
+        var apps = applicationModel.getApplicationById(8888);
+        expect(apps.id).to.equal(8888);
+      });
+    });
+  });
 });
