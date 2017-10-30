@@ -4,7 +4,7 @@
   "private": true,
   "description": "DevOps Tutorial App",
   "scripts": {
-    "start": "node --harmony app.js",
+    "start": "node app.js",
     "mocha_unit_test_api": "./node_modules/mocha/bin/mocha --recursive --reporter xunit-file test/api/",
     "karma_unit_test": "gulp dev-karma",
     "mocha_unit_test": "gulp dev-mocha",
@@ -88,7 +88,7 @@
     "karma-sinon": "~1.0.4",
     "karma-spec-reporter": "*",
     "lodash": "latest",
-    "mocha": "^2.2.5",
+    "mocha": "latest",
     "mocha-jenkins-reporter": "^0.1.9",
     "mocha-junit-reporter": "^1.6.1",
     "mocha-text-cov": "^0.1.0",
