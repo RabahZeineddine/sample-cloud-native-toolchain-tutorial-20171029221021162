@@ -8,7 +8,7 @@ var paths = {
 };
 var runSequence = require('run-sequence');
 var karma = require('karma').server;
-var mocha = require('gulp-mocha');
+//var mocha = require('gulp-mocha');
 var bower = require('gulp-bower');
 var shell = require('gulp-shell');
 
@@ -45,22 +45,22 @@ gulp.task('dev-karma', function(done) {
 });
 
 //Task for mocha (server) unit tests
-gulp.task('dev-mocha', function() {
-  return gulp.src('test/unit/server/**/*spec.js', {read: false})
-    .pipe(mocha({
-      globals:['expect'],
-      timeout: 3000,
-      ignoreLeaks: true,
-      ui: 'bdd',
-      colors: true,
-      reporter: 'mocha-jenkins-reporter',
-      reporterOptions: {
-        junit_report_name: 'Mocha Unit Tests for Server',
-        junit_report_path: 'test/mocha-report.xml',
-        junit_report_stack: 1,
-      },
-    }));
-});
+//gulp.task('dev-mocha', function() {
+//  return gulp.src('test/unit/server/**/*spec.js', {read: false})
+//    .pipe(mocha({
+//      globals:['expect'],
+//      timeout: 3000,
+//      ignoreLeaks: true,
+//      ui: 'bdd',
+//      colors: true,
+//      reporter: 'mocha-jenkins-reporter',
+//      reporterOptions: {
+//        junit_report_name: 'Mocha Unit Tests for Server',
+//        junit_report_path: 'test/mocha-report.xml',
+//        junit_report_stack: 1,
+//      },
+//    }));
+//});
 
 gulp.task('dev-setup', function() {
   return bower();
